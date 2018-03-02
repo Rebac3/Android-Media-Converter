@@ -58,6 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
+                android:focusableInTouchMode="true"
                 app:cardCornerRadius="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -228,19 +229,17 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:layout_marginEnd="@dimen/margin_normal"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="@dimen/margin_small"
-                    android:paddingEnd="@dimen/margin_normal"
-                    android:paddingStart="@dimen/margin_normal"
-                    android:paddingTop="@dimen/margin_small">
+                    android:paddingBottom="@dimen/margin_small">
 
                     <LinearLayout
                         android:id="@+id/btnLayout"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="70dp"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:theme="?android:attr/buttonBarStyle"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -281,7 +280,6 @@
                         android:id="@+id/details"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
-                        android:layout_marginTop="@dimen/margin_small"
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="top"

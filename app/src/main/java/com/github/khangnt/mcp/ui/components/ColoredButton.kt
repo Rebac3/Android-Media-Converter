@@ -19,13 +19,13 @@ class ColoredButton @JvmOverloads constructor(
         super.drawableStateChanged()
         if (isSelected) {
             // update textColor, background from Widget.AppCompat.Button.Colored
-            this.setTextColor(context.getColor(R.color.colorAccent))
-            this.setBackgroundColor(context.getColor(R.color.backgroundColor))
+            this.setTextColor(context.getColor(R.color.backgroundColor))
+            this.setBackgroundColor(context.getColor(R.color.colorAccent))
 
         } else {
             // update textColor, background from Widget.AppCompat.Button.Borderless.Colored
-            this.setTextColor(context.getColor(R.color.backgroundColor))
-            this.setBackgroundColor(context.getColor(R.color.colorAccent))
+            this.setTextColor(context.getColor(R.color.colorAccent))
+            this.setBackgroundColor(context.getColor(R.color.backgroundColor))
         }
     }
 }
